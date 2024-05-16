@@ -10,4 +10,3 @@ library(testthat)
 library(ysy)
 
 test_check("ysy")
-test_that("ysy")

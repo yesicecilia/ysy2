@@ -39,7 +39,11 @@ model <- function(t, y, param) {
 
 #设置评估参数值
 times <- seq(0, 156, by = 1/7)
-param <- c(mu = 0.000, beta1 = 4, beta2 = 5, gamma1 = 0.01, gamma2 = 0.02, mu1 = 0.000, mu2 = 0.000, lamda1 = 0.004, lamda2 = 0.005, N = 1)
+param <- c(mu = 0.000, beta1 = 4, beta2 = 5,
+           gamma1 = 0.01, gamma2 = 0.02,
+           mu1 = 0.000, mu2 = 0.000,
+           lamda1 = 0.004, lamda2 = 0.005,
+           N = 1)
 init <- c(S = 0.9999, E = 0.00008, I1 = 0.00001, I2 = 0.00005, R = 0)
 
 #调用微分方程求解函数，传入初始条件，评估时间、模型以及参数信息
