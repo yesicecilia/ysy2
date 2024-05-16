@@ -1,0 +1,96 @@
+* using log directory 'E:/大三/下/数据挖掘/project/ysy.Rcheck'
+* using R version 4.3.0 (2023-04-21 ucrt)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* R was compiled by
+    gcc.exe (GCC) 12.2.0
+    GNU Fortran (GCC) 12.2.0
+* running under: Windows 11 x64 (build 22631)
+* using session charset: UTF-8
+* using options '--no-manual --as-cran'
+* checking for file 'ysy/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'ysy' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking serialization versions ... OK
+* checking whether package 'ysy' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... NOTE
+Non-standard files/directories found at top level:
+  'seir.pdf' 'seir.svg'
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... ERROR
+Error in file 'R/Seir.R':
+  cannot open the connection
+Warning in file 'R/Seir.R':
+  cannot open file 'E:/e$'d8	/d8/f0f.ff/project/ysy.Rcheck/00_pkg_src/ysy/R/Seir.R': Invalid argument
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  'deSolve' 'ggplot2' 'svglite'
+  All declared Imports should be used.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'model'
+  't' 'y' 'param'
+Documented arguments not in \usage in documentation object 'model':
+  'user'
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  [ FAIL 1 | WARN 0 | SKIP 0 | PASS 0 ]
+  
+  ══ Failed tests ════════════════════════════════════════════════════════════════
+  ── Error ('testthat.R:12:1'): (code run outside of `test_that()`) ──────────────
+  Error in `test_dir("testthat", package = package, reporter = reporter, 
+      ..., load_package = "installed")`: No test files found
+  Backtrace:
+      ▆
+   1. └─testthat::test_check("ysy") at testthat.R:12:1
+   2.   └─testthat::test_dir("testthat", package = package, reporter = reporter, ..., load_package = "installed")
+   3.     └─rlang::abort("No test files found")
+  
+  [ FAIL 1 | WARN 0 | SKIP 0 | PASS 0 ]
+  Error: Test failures
+  Execution halted
+* checking for non-standard things in the check directory ... OK
+* checking for detritus in the temp directory ... OK
+* DONE
+Status: 2 ERRORs, 1 WARNING, 2 NOTEs
